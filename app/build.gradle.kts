@@ -73,11 +73,13 @@ dependencies {
     //Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.5.1")
     implementation("androidx.navigation:navigation-runtime-ktx:2.5.3")
+
     //Retrofit & OkHttp Implementatio
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     //Hilt Implementation
+
     implementation ("com.google.dagger:hilt-android:2.44")
     kapt ("com.google.dagger:hilt-compiler:2.44")
     //Compose Viewmodel

@@ -74,10 +74,13 @@ fun SchoolItem(schools: SchoolListItemModel, navigateToDetail: (String) -> Unit)
                 text = "${schools.schoolName}",
                 color = Color.Black,
                 fontWeight = FontWeight.Bold,
+
                 modifier = Modifier
-                    .weight(0.5f)
+                    .weight(3f)
                     .padding(start = 10.dp),
-                fontSize = 20.sp
+                fontSize = 20.sp,
+                maxLines = 5
+
             )
             Text(
                 text = "${schools.borough}",

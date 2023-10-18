@@ -16,10 +16,10 @@ class SatScoreListViewModel @Inject constructor(
     val satScores : StateFlow<SatListItemModel> = _satScores
 
     suspend fun getSatScores(dbn :String ){
-        if(satScores.value.dbn == dbn){
+
             val response = repository.getSatScore(dbn)
             _satScores.emit(response[0] ?: SatListItemModel())
-        }
+
 
     }
 }
